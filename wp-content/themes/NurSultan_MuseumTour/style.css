@@ -1,0 +1,552 @@
+/*
+Theme Name: NurSultan_MuseumTour
+Template: blankslate
+*/
+
+@import url('../blankslate/style.css');
+
+
+* {
+	font-family: Tahoma;
+}
+#header {
+	display: flex;
+	background: rgba(226, 165, 32, 0.7);
+	justify-content: ;
+	padding: 5px;
+	font-family: Tahoma;
+	position: fixed;
+	top: 47px;
+	left: 15px;
+	border-radius: 100px;
+	width: 55px;
+	overflow: hidden;
+	transition: .8s;
+	z-index: 99;
+}
+#header:hover {
+	width: 465px;
+}
+
+#menu {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	margin-left: 35px;
+}
+.menu {
+	display: flex;
+}
+.menu a {
+	position: relative;
+	text-decoration: none;
+	color: #fff;
+	font-size: 19px;
+	margin-right: 20px;
+}
+.menu a:before {
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 0;
+	height: 1px;
+	background: #ffdc7a;
+	transition: .4s;
+}
+.menu a:hover:before {
+	width: 100%;
+}
+#logo {
+	height: 45px;
+	cursor: pointer;
+}
+#search {
+	display: none;
+}
+
+#footer {
+	background: #2f6384;
+	font-size: 20px;
+	color: #fff;
+	padding: 10px 40px;
+	font-family: Tahoma;
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+}
+
+
+
+
+
+#str1 {
+	height: 650px;
+	color: #fff;
+	text-align: center;
+	background-image: url(http://wordress.nurbeklu.beget.tech/wp-content/uploads/2020/01/20160810-WED_29701.jpg);
+	background-position: center;
+	background-size: cover;
+	background-attachment: fixed;
+	overflow: hidden;
+}
+#tagline {
+	display: inline-block;
+	text-align: center;
+	font-size: 24px;
+	margin-top: 150px;
+	color: #fff;
+	text-shadow: 0 0 8px rgba(0,0,0,0.5);
+	line-height: 40px;
+	font-weight: ;
+}
+#tagline > span {
+	position: relative;
+	font-size: 32px;
+}
+#tagline > span:after {
+	content: "";
+	display: block;
+	background: #fff;
+	width: 200px;
+	height: 1px;
+	position: absolute;
+	left: 250px;
+	top: 115%;
+	box-shadow: 0 0 3px rgba(0,0,0,1);
+}
+.wonderplugincarousel-container {
+	margin-top: 100px;
+	color: #fff;
+	overflow: hidden;
+}
+.wonderplugincarousel:before {
+	content: "";
+	display: block;
+	background: #fff;
+	width: 310px;
+	height: 1px;
+	position: absolute;
+	left: -400px;
+	top: 127px;
+}
+.wonderplugincarousel:after {
+	content: "";
+	display: block;
+	background: #fff;
+	width: 270px;
+	height: 1px;
+	position: absolute;
+	left: 810px;
+	top: 127px;
+}
+.wpp-btn-blue-medium {
+	background: #c79424;
+	transition: background .2s;
+}
+.wpp-btn-blue-medium:hover {
+	background: #e3aa2d;
+}
+
+
+
+
+
+
+
+#str2 {
+	height: 780px;
+	color: #000;
+	background: #fff;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+#str2_tag {
+	position: relative;
+	display: inline-block;
+	font-size: 26px;
+	color: #e8a920;
+	margin-top: 100px;
+	font-weight: bold;
+}
+#str2_tag:after {
+	content: "";
+	display: block;
+	width: 50px;
+	height: 1px;
+	background: #da9c15;
+	position: absolute;
+	left: 18px;
+	top: 120%;
+}
+
+#museums_block {
+	margin: 70px auto;
+	width: 960px;
+	height: 840px;
+	overflow: hidden;
+	display: flex;
+	padding: 10px 25px;
+}
+
+.museums_wrapper {
+	display: grid;
+	grid-template-rows: 180px 180px;
+	grid-template-columns: 270px 270px 270px;
+	grid-gap: 50px;
+	margin-right: 50px;
+	transition: margin-left .8s;
+}
+.museum_img {
+	width: 270px;
+	height: 150px;
+	background-size: cover;
+	background-position: center;
+	margin: auto;
+}
+@keyframes qq {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 180px;
+	}
+}
+.museum {
+	animation: qq .8s forwards;
+	overflow: hidden;
+	display: block;
+	transition: .4s;
+	color: #fff;
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	background: #e8a920;
+	position: relative;
+	box-shadow:
+   0 0 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8)
+}
+.museum:hover {
+	transform: scale(1.05);
+	box-shadow:
+   0 0 4px rgba(0, 0, 0, .3),
+   -16px 0 20px -23px rgba(0, 0, 0, .8),
+   16px 0 20px -23px rgba(0, 0, 0, .8)
+}
+.museum:active {
+	transform: scale(0.95);
+	box-shadow:
+   0 0 4px rgba(0, 0, 0, .3),
+   -23px 0 20px -23px rgba(0, 0, 0, .8),
+   23px 0 20px -23px rgba(0, 0, 0, .8)
+}
+.museum_name {
+	color: #fff;
+	margin-top: 5px;
+	display: inline-block;
+	overflow: hidden;
+}
+
+
+#left_triangle {
+	width: 250px;
+	height: 250px;
+	background: #ffc84f;
+	opacity: 0.7;
+	transform: rotate(45deg) skew(20deg, 20deg);
+	position: absolute;
+	left: -160px;
+	top: 278px;
+	z-index: 50;
+	transition: box-shadow .5s;
+}
+#right_triangle {
+	width: 250px;
+	height: 250px;
+	background: #ffc84f;
+	opacity: 0.7;
+	transform: rotate(45deg) skew(20deg, 20deg);
+	position: absolute;
+	right: -156px;
+	top: 278px;
+	z-index: 50;
+	transition: box-shadow .5s;
+}
+.triangle_active {
+	box-shadow: 0 0 15px rgba(0,0,0,.6);
+	cursor: pointer;
+}
+
+#filter {
+	position: absolute;
+	right: 220px;
+	top: 160px;
+}
+
+
+
+
+
+
+
+
+
+#str3 {
+	height: 780px;
+	color: #fff;
+	background: #f7f7f7;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+#str3_line {
+	width: 2px;
+	height: 60%;
+	background: #f0b024;
+	margin: 0 50px 0 50px;
+}
+.str3_tags {
+	position: relative;
+	display: inline-block;
+	font-size: 26px;
+	color: #e8a920;
+	font-weight: bold;
+}
+.str3_tags:after {
+	content: "";
+	display: block;
+	width: 50%;
+	height: 1px;
+	background: #da9c15;
+	position: absolute;
+	left: 25%;
+	top: 120%;
+}
+.events_news {
+	display: ;
+	width: 450px;
+	height: auto;
+	background: ;
+}
+.events_news_list {
+	width: 100%;
+	margin-top: 50px;
+	position: relative;
+	z-index: 5;
+}
+.events_news_post {
+	display: block;
+	text-decoration: none;
+	color: #474747;
+	font-size: 20px;
+	margin-bottom: 10px;
+	text-align: center;
+	padding: 8px 20px;
+	border-radius: 100px;
+	border: 1px solid #adadad;
+	background: #fff;
+	transition: .4s;
+}
+.events_news_post:hover {
+	box-shadow: 0 0 15px inset rgba(240,193,74,.7);
+}
+.events_news_post time {
+	font-size: 14px;
+	margin-bottom: 3px;
+	display: block;
+	color: #878787;
+}
+
+
+#events_list:after {
+	content: "";
+	display: block;
+	position: absolute;
+	left: -600px;
+	top: -120px;
+	width: 500px;
+	height: 500px;
+	background: #ffc84f;
+	opacity: .4;
+	border-radius: 400px;
+	z-index: -1;
+}
+#news_list:after {
+	content: "";
+	display: block;
+	position: absolute;
+	right: -600px;
+	top: -120px;
+	width: 500px;
+	height: 500px;
+	background: #ffc84f;
+	opacity: .4;
+	border-radius: 400px;
+	z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+
+#str4 {
+	height: 780px;
+	background: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+	position: relative;
+}
+#form_name {
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #474747;
+	padding-bottom: 3px;
+	font-size: 16px;
+}
+#form_email {
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #474747;
+	padding-bottom: 3px;
+	font-size: 16px;
+}
+#form_message {
+	resize: none;
+	width: 351px;
+	height: 130px;
+	margin-bottom: 20px;
+	border: none;
+	border-bottom: 1px solid #474747;
+	padding-bottom: 3px;
+	font-size: 16px;
+}
+#form_name:focus {
+	outline: none;
+	border-bottom: 1px solid #e8a920;
+}
+#form_email:focus {
+	outline: none;
+	border-bottom: 1px solid #e8a920;
+}
+#form_message:focus {
+	outline: none;
+	border-bottom: 1px solid #e8a920;
+}
+#contact_form {
+	max-height: 100%;
+}
+div.wpcf7-response-output {
+	margin: 0;
+	margin-top: 10px;
+	margin-bottom: -30px;
+}
+.your-email, .your-name, .your-message {
+	display: flex;
+}
+#form_tag {
+	display: inline-block;
+	position: relative;
+	color: #e8a920;
+	font-size: 22px;
+	margin-bottom: 40px;
+}
+#form_tag:after {
+	content: "";
+	display: block;
+	width: 150%;
+	height: 1px;
+	background: #e8a920;
+	position: absolute;
+	left: -50%;
+	top: 110%;
+}
+
+#contact_form_block {
+	background: #fff;
+	padding: 40px 50px 40px 0px;
+	box-shadow: 0 0 25px rgba(0,0,0,.3);
+	position: relative;
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: center;
+	align-items: center;
+}
+#contact {
+	background:  linear-gradient(to right top, #e8a920, #fab92d);
+	padding: 47px 30px;
+	position: relative;
+	margin-left : -70px;
+	margin-right: 50px;
+	box-shadow: 0 0 15px rgba(0,0,0,.3);
+}
+#contact_tag {
+	display: block;
+	color: #fff;
+	font-size: 22px;
+	margin-bottom: 35px;
+	text-align: center;
+}
+.contact_info {
+	display: block;
+	color: #fff9eb;
+	margin-bottom: 20px;
+}
+.contact_info > span {
+	display: inline-block;
+	color: #fff;
+	font-size: 18px;
+	margin-bottom: 3px;
+	border-bottom: 1px solid  #ffdd94;
+}
+
+.wpcf7-submit {
+	background: #e8a920;
+	color: #fff;
+	font-size: 18px;
+	padding: 5px 15px;
+}
+
+
+
+#str4_line1 {
+	background: #e8a920;
+	width: 30%;
+	height: 3px;
+	margin-right: auto;
+	margin-bottom: 30px;
+	opacity: .6;
+}
+#str4_line2 {
+	background: #e8a920;
+	width: 30%;
+	height: 3px;
+	margin-left: auto;
+	margin-top: 30px;
+	opacity: .6;
+}
+
+
+
+
+
+
